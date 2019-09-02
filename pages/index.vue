@@ -30,14 +30,6 @@ import Logo from '~/components/Logo.vue'
 export default {
   components: {
     Logo
-  },
-  async asyncData({ params, error, app: { $axios } }) {
-    try {
-      await Promise.resolve(10)
-      console.log(10)
-    } catch (e) {
-      error({ statusCode: 404, message: 'Post not found' })
-    }
   }
 }
 </script>
