@@ -1,3 +1,5 @@
+// const path = require('path')
+
 module.exports = {
   mode: 'universal',
   /*
@@ -47,6 +49,9 @@ module.exports = {
    ** See https://axios.nuxtjs.org/options
    */
   axios: {},
+  router: {
+    // base: path.resolve('dist')  静态化之后，要使事件生效，需要修改路径
+  },
   /*
    ** Build configuration
    */
